@@ -1,0 +1,715 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+html{
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+.inner{
+    max-width: 1200px;
+    padding: 3%;
+    margin: 0 auto;
+}
+/* navigation area starts here */
+#my-nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: fixed;
+    z-index: 20;
+    background-color: #fff;
+}
+.logo img{
+    width:100%;
+    cursor: pointer;
+}
+ .menu-links{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    background-color: #fff;
+}
+.menu-links li{
+    list-style: none;
+    margin: 1px;
+}
+.menu-links li a{
+    color: #222222;
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 400 ;
+    text-decoration: none;
+    padding: 7px 9px;
+    transition: 0.2s ease-in;
+}
+.menu-links li a:hover{
+    background-color: #076799;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 300;
+}
+.menu-links li .active{
+    background: #a8cf45;
+    color: #fff;
+}
+.menu-btn i{
+    font-size: 1.5rem;
+    display: none;
+}
+#my-nav #click{
+    display: none;
+}
+/* banner area starts here */
+/* carousel area starts here */
+.banner{
+    width: 100%;
+    padding-top: 11vh;
+    position: relative;
+}
+.carousel-img{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    
+}
+.carousel-img::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 2;
+}
+.carousel-img img{
+    width: 100%;
+    height: 90vh;
+}
+
+/* carousel area ends here */
+/* intro and form area */
+.intro{
+    width: 100%;
+    position: absolute;
+    top: 30vh;
+    left: 0;
+    z-index: 10;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.my-form{
+    width: 50%;
+}
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+form{
+    width: 75%;
+    background-color: white;
+    margin-left: 22%;
+    padding: 2%;
+    padding-left: 30px;
+}
+form h3{
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+form i{
+    color: #fff;
+    background-color: #a8cf45;
+    padding: 5px;
+    font-size: 0.8rem;
+}
+::placeholder{
+    padding: 3px;
+}
+form button{
+    width: 95%;
+    height: 40px;
+    border: 0;
+    background-color: #a8cf45;
+    letter-spacing: 1px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 100;
+    color: #fff;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+form button:hover{
+    background-color: #076799;
+}
+ .colu-50 {
+    width: 50%;
+    margin: 15px 0;
+}
+.colu-50 .my-name{
+    width: 90%;
+    height: 40px;
+}
+.my-intro{
+    width: 50%;
+}
+.my-intro h1{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+.my-intro p{
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+.mybtn{
+    width: 150px;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-family: 'Noto Sans JP', sans-serif;
+    border: 0;
+    background-color: #a8cf45;
+    color: #fff;
+    outline: none;
+}
+
+.mybtn:hover{
+    background-color: #076799;
+    cursor: pointer;
+}
+
+/* banner area ends here */
+/* description area starts here */
+.description .mybox{
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    padding: 5%;
+    text-align: center;
+}
+.description .item .active,.description .item .mybox:hover{
+    border-bottom: 8px solid #a8cf45;
+}
+.description  .mybox img{
+    width: 25%;
+    text-align: center;
+    margin: 20px auto;
+}
+.description .mybox h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.description .mybox p{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 20px 0;
+    padding: 0 2%;
+}
+/* description area ends here */
+/* welcome area start here */
+.welcome{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.welcome .welcome-left{
+    width: 50%;
+}
+.welcome .welcome-right{
+    width: 48%;
+}
+.welcome-left img{
+    width: 100%;
+    border: 8px solid #a8cf45;
+}
+.welcome-right h4{
+    color: gray;
+}
+.welcome-right h2{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 5px 0;
+}
+.welcome-right p{
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: grey;
+    line-height: 1.5rem;
+    margin: 10px 0;
+}
+.welcome-right button{
+    margin-top: 1rem;
+}
+/* welcome area ends here */
+/* agent details area start here */
+.details-bg{
+    width: 100%;
+    background-image: url("../img/parallax_02.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 2%;
+}
+.details-bg h1{
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.details-bg .my-p{
+    font-size: 1.1rem;
+    color: grey;
+    text-align: center;
+    font-weight: 400;
+    padding:0 20%;
+    line-height: 1.7rem;
+    margin-bottom: 1.4rem;
+}
+.details{
+    width: 100%;
+}
+.details .detail-1{
+    width: 45%;
+}
+.details .detail-img,.details .detail-3{
+    width: 22%;
+}
+.detail-img img{
+    width: 100%;
+    border: 8px solid #a8cf45;
+}
+.detail-1 h4,.detail-1 p{
+    color: gray;
+}
+.detail-1 h4{
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.detail-1 h2{
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin: 1rem 0;
+    color: #fff;
+}
+.detail-1 .add-p{
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+}
+.detail-1 p{
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+    margin: 1rem 0;
+}
+.detail-3 h3{
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: grey;
+}
+.detail-3 i{
+    padding: 8px;
+    background-color: rgb(53, 53, 53);
+    margin-right: 5px;
+    border-radius: 100%;
+    font-size: 0.8rem;
+}
+/* agent details area ends here */
+/*testimonial area starts here */
+.full-width{
+    background-color: rgb(233, 232, 232);
+    padding: 2%;
+}
+.full-width #customer{
+    position: relative;
+}
+#customer  .testimonial img{
+    width: 20%;
+    float: left;
+    margin-left: 2rem;
+}
+.full-width .my-add-p h1{
+    text-align: center;
+    font-size: 2.4rem;
+    margin-top: 2rem;
+    font-weight: 400;
+}
+.full-width .my-add-p p{
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    padding: 0 25%;
+    margin: 1rem 0 2rem 0;
+    text-align: center;
+    color: rgb(158, 158, 158);
+}
+#customer .testimonial{
+    background-color: #fff;
+    padding: 2% 0;
+}
+#customer .testimonial h3{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 2.5rem 0 1rem 0;
+    text-align: center;
+}
+#customer .testimonial p{
+    font-style: italic;
+    color: gray;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 1rem 0;
+    padding: 0 10%;
+    text-align: center;
+}
+#customer .testimonial h4{
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+#customer .testimonial .name{
+    padding: 0;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 5rem;
+    font-size: 0.8rem;
+}
+#customer .owl-nav{
+    width: 100%;
+    position:absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+#customer .owl-nav .owl-prev{
+    position: absolute;
+    left: -7%;
+    display: block;
+    width: 54px;
+    height: 68px;
+    font-size: 2rem;
+    color: black;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    transition: all 0.5s ease-in-out;
+}
+#customer .owl-nav .owl-next{
+    position: absolute;
+    right: -7%;
+    display: block;
+    width: 54px;
+    height: 68px;
+    font-size: 2rem;
+    color: black;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    transition: all 0.5s ease-in-out;
+}
+#customer .owl-nav .owl-prev:hover,#customer .owl-nav .owl-next:hover{
+    background-color: #076799;
+    color: #fff;
+}
+/*testimonial area ends here */
+/*footer area starts here */
+footer{
+    background-color: #333333;
+}
+footer .info-1{
+    width: 32%;
+    color: grey;
+}
+footer .info-2,footer .info-3,footer .info-4{
+    width: 20%;
+    color: grey;
+}
+.info-1 img{
+    width: 50%;
+    margin-bottom: 1.5rem;
+}
+.info-1 p{
+    font-size: 0.9rem;
+    line-height: 1.7rem;
+    margin-bottom: 1.3rem;
+}
+.info-2 h3,.info-3 h3 , .info-4 h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 1.2rem;
+}
+.info-2 p,.info-3 p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+}
+.info-2 a,.info-3 a{
+    color:gray;
+    text-decoration: none;
+}
+.info-2 a:hover,.info-3 a:hover{
+    color:rgb(255, 208, 0);
+}
+.info-4 p{
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+}
+.info-4 i{
+    padding: 8px;
+}
+.footer-final{
+    background-color: #444444;
+    color: #fff;
+    padding: 4%;
+    text-align: center;
+}
+.footer-final .fo-final-1,.footer-final .fo-final-2{
+    width:50% ;
+}
+.footer-final p{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+}
+.footer-final .mygrey{
+    color: grey;
+}
+.fo-final-2 .newsletter{
+    width: 50%;
+    height: 50px;
+    background-color: black;
+    color: grey;
+    font-family: sans-serif;
+    font-size: 1rem;
+    border: 0;
+    outline: 0;
+}
+.fo-final-2 button{
+    width: 90px;
+    height: 40px;
+    background-color: black;
+    color: grey;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: sans-serif;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+.fo-final-2 button:hover{
+    background-color: rgb(207, 207, 207);
+    color: rgb(0, 0, 0);
+}
+/*footer area ends here */
+
+@media only screen and (max-width:1450px){
+    .menu-links{
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width:1135px){
+    .menu-links{
+        width: 55%;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .menu-links{
+        position: fixed;
+        top: 10vh;
+        left: 0%;
+        width: 100%;
+        height: 0px;
+        flex-direction: column;
+        align-items: left;
+        overflow-y: hidden;
+        transition: all 0.5s ease;
+    }
+    .menu-links li{
+        margin: 10px 0;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .menu-links li a{
+        width: 100%;
+        display: block;
+    }
+    .menu-btn i{
+        display: block;
+        color: #222222;
+        cursor: pointer;
+    }
+    .menu-btn i:hover{
+        color: #a8cf45;
+    }
+    #click:checked ~ .menu-links{
+        height: 52vh;
+    }
+    #click:checked ~ .menu-btn i::before{
+        content: "\f00d";
+    }
+    .intro .my-form{
+        display: none;
+    }
+    .my-intro{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .my-intro h1{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .my-intro p{
+        font-size: 1.5rem;
+        line-height: 3rem;
+        text-align: center;
+    }
+    .my-intro .mybtn{
+        margin: o auto;
+    }
+    .inner{
+        padding: 7%;
+    }
+    .welcome .welcome-left,.welcome .welcome-right{
+        width: 100%;
+        text-align: center;
+    }
+    .welcome .welcome-left{
+        margin-bottom: 4rem;
+    }
+    .welcome-right h2{
+        margin: 1rem 0;
+    }
+    .welcome-right p{
+        line-height: 1.3rem;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
+    .details .detail-1{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .details .detail-1 p{
+        text-align: left;
+    }
+    .details .detail-img, .details .detail-3{
+        width: 47%;
+    }
+    footer .info-1,footer .info-2,footer .info-3,footer .info-4{
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+    .footer-final .fo-final-1,.footer-final .fo-final-2{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media only screen and (max-width:800px){
+    .intro{
+        top: 30vh;
+    }
+    .my-intro h1{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .my-intro p{
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+    }
+    .mybtn{
+        width: 120px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+    .welcome-right h2{
+        font-size: 1.5rem;
+    }
+    .welcome-right p{
+        font-size: 0.9rem;
+    }
+    .details-bg h1{
+        margin-top: 3rem;
+        font-size: 1.5rem;
+    }
+    .details-bg .my-p{
+        font-size: 0.9rem;
+    }
+    .detail-1 h2{
+        margin-top: 0;
+    }
+    .full-width .my-add-p h1{
+        font-size: 1.7rem;
+    }
+    .full-width .my-add-p p{
+        font-size: 0.9rem;
+    }
+    #customer .owl-nav .owl-prev{
+        width: 33px;
+        height: 48px;
+        font-size: 1.5rem;
+        left: -9%;
+    }
+    #customer .owl-nav .owl-next{
+        width: 33px;
+        height: 48px;
+        font-size: 1.5rem;
+        right: -9%;
+    }
+    .footer-final p{
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width:600px){
+    .my-intro h1{
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+    .my-intro p{
+        font-size: 0.9rem;
+        line-height: 1.3rem;  
+    }
+    .details .detail-img, .details .detail-3{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+    .footer-final p{
+        font-size: 0.6rem;
+    }
+}
