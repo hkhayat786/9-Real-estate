@@ -696,6 +696,15 @@ footer .info-2,footer .info-3,footer .info-4{
     }
 }
 @media only screen and (max-width:600px){
+    .carousel-img{
+        height: 80vh;
+    }
+    .carousel-img::before{
+        height: 80vh;
+    }
+    .carousel-img img{
+        height: 80vh;
+    }
     .my-intro h1{
         font-size: 1.7rem;
         margin-bottom: 1rem;
